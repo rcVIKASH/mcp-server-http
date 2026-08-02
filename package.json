@@ -1,0 +1,23 @@
+{
+  "name": "mcpserver",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server implementation using FastMCP",
+  "main": "dist/expenseTracker.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/expenseTracker.js",
+    "dev": "tsc && node dist/expenseTracker.js",
+    "inspect": "npx fastmcp inspect src/expenseTracker.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.2",
+    "fastmcp": "^4.12.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
