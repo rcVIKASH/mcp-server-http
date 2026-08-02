@@ -205,4 +205,7 @@ server.addTool({
 
 server.start({
   transportType: "httpStream",
+  httpStream: {
+    port: 8080,
+  },
 });
